@@ -1,0 +1,7 @@
+# robots.txt for The Adaptable Chameleon Podcast
+
+User-agent: *
+Allow: /
+
+# Add your sitemap URL after deploying (optional):
+# Sitemap: https://yourdomain.com/sitemap.xml
