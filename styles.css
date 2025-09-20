@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff7ed;
+}
+
+/* Sticky site header */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffffff; /* solid background */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 56px;
+}
+.site-title {
+    color: #8a02b2;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+.main-content {
+    padding: 40px 0;
+}
+
+.hero { text-align: center; margin-bottom: 20px; padding: 24px 0; }
+.hero.minimal { padding-top: 10px; padding-bottom: 10px; }
+.hero.has-cover { position: relative; overflow: hidden; }
+.hero.has-cover::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('adaptable chameleon podcast banner.png');
+    background-repeat: no-repeat;
+    background-position: center -120px; /* show area ~120px below the top */
+    background-size: 140% auto;         /* stretch wider horizontally */
+    opacity: 0.15; /* low transparency for readability */
+    pointer-events: none;
+}
+.hero.has-cover > * { position: relative; z-index: 1; }
+
+.headline { font-size: 3rem; font-weight: 700; color: #8000ff; margin-bottom: 12px; line-height: 1.2; }
+
+.subheadline { font-size: 1.3rem; color: #333; margin-bottom: 24px; font-weight: 400; }
+
+
+
+.container.narrow { max-width: 1100px; }
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #8a02b2 0%, #a855f7 100%);
+    color: white;
+    padding: 20px 50px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(138, 2, 178, 0.3);
+    min-height: 44px;
+    min-width: 44px;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(138, 2, 178, 0.4);
+}
+
+section {
+    margin-bottom: 56px;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(138, 2, 178, 0.08);
+}
+/* tighten spacing above Calendly */
+.signup { padding-top: 8px; }
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #8a02b2;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.benefits-intro {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits-list li {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(138, 2, 178, 0.1);
+    font-size: 1.1rem;
+    position: relative;
+    padding-left: 30px;
+}
+
+.benefits-list li:before {
+    content: "✨";
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+
+.benefits-list li:last-child {
+    border-bottom: none;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.step {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #8a02b2 0%, #a855f7 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 20px auto;
+}
+
+.step p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.signup {
+    text-align: center;
+}
+
+.signup h2 {
+    color: #8a02b2;
+    font-size: 2.2rem;
+}
+
+.signup p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+    line-height: 1.7;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calendly-container {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 40px 0;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    min-height: 700px;
+}
+
+.calendly-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #8a02b2;
+    font-size: 1.1rem;
+    z-index: 1;
+}
+
+.calendly-error {
+    padding: 40px;
+    text-align: center;
+    color: #555;
+}
+
+.calendly-error h3 {
+    color: #8a02b2;
+    margin-bottom: 15px;
+}
+
+.calendly-error a {
+    color: #8a02b2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.calendly-error a:hover {
+    text-decoration: underline;
+}
+
+.final-message {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 30px;
+    color: #333;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.footer {
+    background-color: #fff7ed;
+    color: #8a02b2;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+    border-top: 2px solid rgba(138, 2, 178, 0.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    .headline { font-size: 2.4rem; }
+    
+    .subheadline { font-size: 1.15rem; }
+    
+    
+    .hero {
+        padding: 20px 0;
+    }
+    /* slightly reduce stretch and offset on smaller screens for quality */
+    .hero.has-cover::before { background-size: 120% auto; background-position: center -80px; }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-button {
+        padding: 18px 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .headline { font-size: 2rem; }
+    
+    .subheadline { font-size: 1rem; }
+    
+    .hero {
+        padding: 16px 0;
+    }
+    
+    .cta-button {
+        padding: 16px 32px;
+        font-size: 1rem;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+    }
+}
