@@ -11,25 +11,7 @@ body {
     background-color: #fff7ed;
 }
 
-/* Sticky site header */
-.site-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: #ffffff; /* solid background */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-}
-.site-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 56px;
-}
-.site-title {
-    color: #8a02b2;
-    font-weight: 700;
-    letter-spacing: 0.2px;
-}
+/* (site header removed) */
 
 .container {
     max-width: 1200px;
