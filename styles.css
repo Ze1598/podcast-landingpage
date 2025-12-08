@@ -32,7 +32,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('adaptable chameleon podcast banner.png');
+    background-image: url('adaptable chameleon podcast banner.webp');
     background-repeat: no-repeat;
     background-position: center -120px; /* show area ~120px below the top */
     background-size: 140% auto;         /* stretch wider horizontally */
@@ -263,7 +263,7 @@ h2 {
     border-radius: 16px;
     padding: 28px 24px;
     box-shadow: 0 12px 40px rgba(0,0,0,0.08);
-    max-width: 980px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 .about-card::before {
@@ -275,7 +275,50 @@ h2 {
     border-bottom-left-radius: 16px;
     background: linear-gradient(180deg, #8000ff 0%, #a855f7 100%);
 }
-.about p { color: #444; font-size: 1.05rem; line-height: 1.8; margin: 8px auto 16px; max-width: 820px; }
+.about p { color: #444; font-size: 1.05rem; line-height: 1.8; margin: 8px auto 16px; max-width: 1000px; }
+.about-card h3 {
+    color: #8a02b2;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 24px 0 14px;
+    text-align: left;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(138, 2, 178, 0.15);
+}
+.about-card h3:first-of-type { margin-top: 16px; }
+.about-card ul:not(.topic-chips) {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto 8px;
+}
+.about-card ul:not(.topic-chips) li {
+    color: #444;
+    font-size: 1.02rem;
+    line-height: 1.7;
+    padding: 10px 16px 10px 40px;
+    position: relative;
+    margin-bottom: 8px;
+}
+.about-card ul:not(.topic-chips) li:before {
+    content: "▸";
+    position: absolute;
+    left: 16px;
+    color: #8a02b2;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.about-card ul:not(.topic-chips) li a {
+    color: #8a02b2;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(138, 2, 178, 0.3);
+    transition: border-bottom 0.2s ease;
+}
+.about-card ul:not(.topic-chips) li a:hover {
+    border-bottom: 2px solid #8a02b2;
+}
 .topic-chips { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin: 14px 0 4px; padding: 0; list-style: none; }
 .chip {
     padding: 8px 14px;
@@ -301,6 +344,9 @@ h2 {
     margin-top: 60px;
     border-top: 2px solid rgba(138, 2, 178, 0.1);
 }
+
+/* Topic chips in footer */
+.footer .topic-chips { margin: 20px auto 24px; }
 
 /* Make connect section compact inside footer */
 .footer .connect { padding: 0; margin: 0 0 8px 0; border: 0; }

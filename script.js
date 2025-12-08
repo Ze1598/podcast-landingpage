@@ -1,1 +1,7 @@
-// Intentionally left empty — Calendly embed loads without custom validations.
+// Set dynamic year in footer
+document.addEventListener('DOMContentLoaded', function() {
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+});
