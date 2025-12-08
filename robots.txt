@@ -3,5 +3,4 @@
 User-agent: *
 Allow: /
 
-# Add your sitemap URL after deploying (optional):
-# Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://www.adaptablechameleon.com/sitemap.xml
