@@ -83,7 +83,12 @@
             <section class="about guests">
                 <div class="about-card">
                     <h2>Previous Guests</h2>
-                    <ul class="guest-list">
+                    <div class="carousel">
+                        <button class="carousel-btn carousel-prev" aria-label="Previous guest">
+                            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <div class="carousel-track-wrap">
+                            <ul class="guest-list carousel-track">
                         <li class="guest-item">
                             <div class="guest-photo-wrap">
                                 <img src="media/Christopher Zdenek.jpeg" alt="Christopher Zdenek" class="guest-photo">
@@ -147,7 +152,13 @@
                                 <p class="guest-desc">Will is a former Royal Air Force pilot, recipient of the Leadership Trophy at Cranwell, and international best-selling author of Free to Lead. Over two decades, he has led transformational programs for 90,000 professionals across 26 countries — from boardrooms to runways — helping people cut through the invisible performances that pass for authenticity and reconnect with who they actually are.</p>
                             </div>
                         </li>
-                    </ul>
+                            </ul>
+                        </div>
+                        <button class="carousel-btn carousel-next" aria-label="Next guest">
+                            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M9 18l6-6-6-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                    </div>
+                    <div class="carousel-indicators" aria-hidden="true"></div>
                 </div>
             </section>
 
